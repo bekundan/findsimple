@@ -1,0 +1,138 @@
+@import url("/_global.css");
+*{
+margin: 0; padding: 0;
+font-family: 'Roboto', sans-serif;
+text-transform: capitalize;
+box-sizing: border-box;
+}
+.primary-color{
+color:#086375;
+}
+.secondary-color{
+color:#3AAED8;
+}
+.main-desc{
+font-size:1.2rem;
+}
+.load-screen{
+min-height:100vh;
+}
+/*nav bar csss*/
+.navbar-brand{
+font-size: 1.9rem;
+font-weight: bolder;
+margin-left: 100px;
+text-shadow: 2px 0px 2px #000;
+}
+#navbarNav li{
+margin-left: 50px;
+font-weight: bold;
+}
+/*nav end*/
+
+/*main images*/
+.anim{
+    animation: fadeIn 2s alternate;   
+}
+
+
+
+/*new section css*/
+#mytools > .row .col-12:nth-child(1) {
+background:rgba(250, 252, 242, 0.1);
+/*background: radial-gradient(circle, rgba(227,227,227,1) 0%, rgba(232,237,244,1) 100%);*/
+}
+.hc{
+min-height: 200px;
+min-width: 200px;
+}
+.tool-card {
+height: 100px;
+width: 100px;
+background-color: transparent: ;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+border-radius: 5px;
+display: inline-block;
+margin: 0px -20px;
+-webkit-box-shadow: 0px 10px 13px -7px #000000, -9px -29px 42px -23px rgba(244,220,255,0.2);
+box-shadow: -1px 10px 19px -22px #000000, 2px -55px 56px -23px rgba(230,220,255,0);
+
+}
+.disc{
+    color: #2E2220;
+}
+.disc:hover {
+    color: #000;
+    font-weight: 700;
+    font-size: 1.7rem;
+    box-shadow: 0px 4px 13px -13px #000000, -9px -29px 42px -23px rgba(244, 220, 255, 0);
+}
+/*    work section*/
+.work-card{
+    height:200px;
+    width:250px;
+    margin:auto;
+}
+
+.work-card > div:nth-child(1){
+    height: 100%;
+    width: 100%;
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 20px 37px -15px rgba(94,90,94,0.74);
+    -moz-box-shadow: 0px 20px 37px -15px rgba(94,90,94,0.74);
+    box-shadow: 0px 20px 37px -15px rgba(94,90,94,0.74);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    position: absolute;
+    z-index: 10;
+}
+
+.work-card-overlay{
+    /*background-color: rgba(82, 170, 94, 0.75);*/
+    background: rgb(250,52,192,0.75);
+/*background: linear-gradient(90deg, rgba(250,52,192,1) 20%, rgba(103,0,166,1) 100%);*/
+    height: 100%;
+    width: 100%;
+    top:0;
+    color: white;
+    cursor: pointer;
+}
+
+.work-card > div{
+    transform: translateY(-10px) scale(1.05);
+}
+.work-card > div:nth-child(1):hover{
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0px 20px 37px -20px rgba(94,90,94,0.74);
+    z-index: -100;
+}
+.work-card > div:nth-child(2):hover{
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0px 20px 37px -20px rgba(94,90,94,0.74);
+    z-index: 100;
+}
+
+/*forms style*/
+.forms{
+background: rgb(52,113,250);
+background: linear-gradient(49deg, rgba(52,113,250,1) 10%, rgba(11,0,166,0.8) 100%);
+min-height: 400px;
+align-content: center;
+padding: 20px;
+box-shadow: -14px 9px 19px -14px #000000, 2px -55px 56px -23px rgba(230,220,255,0);
+}
+
+
+
+/*footer*/
+.footer{
+    color: black;
+    background-color: rgb(199, 227, 226,0.7 );
+    min-height: 100px;
+
+}
