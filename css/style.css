@@ -78,7 +78,7 @@
     background-size: cover;
     border-radius: 5px;
     display: inline-block;
-    margin: 0px -20px;
+    margin: 5px 0px;
     -webkit-box-shadow: 0px 10px 13px -7px #000000, -9px -29px 42px -23px rgba(244, 220, 255, 0.2);
     box-shadow: -1px 10px 19px -22px #000000, 2px -55px 56px -23px rgba(230, 220, 255, 0);
 
