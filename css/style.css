@@ -1,203 +1,251 @@
 @import url("/_global.css");
-
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
-    /*    text-transform: capitalize;*/
-    box-sizing: border-box;
+margin: 0;
+padding: 0;
+font-family: 'Roboto', sans-serif;
+/*    text-transform: capitalize;*/
+box-sizing: border-box;
 }
-
 .primary-color {
-    color: #086375;
+color: 0D0628;
 }
-
 .secondary-color {
-    color: #3AAED8;
+color: #C14953;
 }
-
 .main-desc {
-    font-size: 1.2rem;
+font-size: 1.2rem;
 }
-
 .load-screen {
-    min-height: 100vh;
+min-height: 100vh;
 }
-
 /*nav bar csss*/
-.navbar-brand {
-    font-size: 2rem;
-    font-weight: bolder;
-    margin-left: 100px;
-    text-shadow: 2px -1px 2px #000;
-    color: #000;
+.logo {
+font-size: 2.2rem;
+font-weight: bolder;
+margin-left: 80px;
+text-shadow: 2px -1px 2px #000;
+color: blue;
+text-decoration: underline;
 }
-
-
+#intro-image{
+height: 400px;
+width: 400px;
+}
 #navbarNav li {
-    margin-left: 50px;
-    font-weight: bold;
-    color: white;
-
+margin-left: 50px;
+font-weight: bold;
+color: white;
 }
-
 #navbarNav li a {
-    font-size: 1.2rem;
-    color: #213A60;
-    font-weight: 800;
-    /*        text-shadow: 0px -1px 0px #000;*/
-
+font-size: 1rem;
+color: #213A60;
+font-weight: 800;
 }
-
-
+#navbarNav a:hover {
+color: #000;
+font-size: 1.1rem;
+border-bottom: 2px solid olive;
+border-radius: 200px;
+}
 /*nav end*/
-
-/*main images*/
-.anim {
-    animation: fadeIn 2s alternate;
-}
-
-
-
-/*new section css*/
+/*my tool section css*/
 #mytools {
-    min-height: 300px;
+min-height: 300px;
 }
-
 .hc {
-    min-height: 200px;
-    min-width: 200px;
+min-height: 200px;
+min-width: 200px;
 }
-
 .tool-card {
-    height: 100px;
-    width: 100px;
-    background-color: transparent:;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 5px;
-    display: inline-block;
-    margin: 5px 0px;
-    -webkit-box-shadow: 0px 10px 13px -7px #000000, -9px -29px 42px -23px rgba(244, 220, 255, 0.2);
-    box-shadow: -1px 10px 19px -22px #000000, 2px -55px 56px -23px rgba(230, 220, 255, 0);
-
+height: 100px;
+width: 100px;
+background-color: transparent:;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+border-radius: 5px;
+display: flex;
+margin: 5px 0px;
+-webkit-box-shadow: 0px 10px 13px -7px #000000, -9px -29px 42px -23px rgba(244, 220, 255, 0.2);
+box-shadow: -1px 10px 19px -22px #000000, 2px -55px 56px -23px rgba(230, 220, 255, 0);
+position: relative;
+z-index: 10;
 }
-
 .tool-card:hover {
-    cursor: pointer;
-    transform: translateY(-15px);
-    background-color: transparent;
-    box-shadow: -1px 10px 19px -22px #000000, 2px -55px 56px -23px rgba(230, 220, 255, 0);
-
+cursor: pointer;
+/*    transform: translateY(-15px);*/
+background-color: transparent;
+box-shadow: none;
+padding: 10px;
 }
-
+.pop_text {
+position: absolute;
+top: 100px;
+left: 0px;
+display: none;
+height: 150px;
+width: 200px;
+background-color: #fff;
+display: none;
+overflow: hidden;
+font-size: 0.9;
+z-index: 100;
+}
+.pop_text_down {
+position: absolute;
+top: 100px;
+left: 00px;
+display: none;
+height: 150px;
+width: 200px;
+background-color: #fff;
+display: none;
+overflow: hidden;
+font-size: 0.9;
+}
+.tool-card:hover ~ .pop_text {
+display: block;
+cursor: pointer;
+box-shadow: -1px 10px 19px -22px #000000, 2px -55px 56px -23px rgba(230, 220, 255, 0);
+transition: .2s ease-in;
+}
+.tool-card:hover ~ .pop_text_down {
+display: block;
+cursor: pointer;
+box-shadow: -1px 10px 19px -22px #000000, 2px -55px 56px -23px rgba(230, 220, 255, 0);
+}
 .disc {
-
-    text-transform: lowercase;
-    color: #213A60;
-
-
+/*    text-transform: lowercase;*/
+color: #000;
+font-size: 1.2rem;
+z-index: -10;
+font-family: 'Inconsolata', monospace;
 }
-
 .disc:hover {
-    color: #000;
-    font-weight: 700;
-    font-size: 1.7rem;
-    box-shadow: 0px 4px 13px -13px #000000, -9px -29px 42px -23px rgba(244, 220, 255, 0);
+color: #000;
+font-weight: 700;
+box-shadow: 0px 4px 13px -13px #000000, -9px -29px 42px -23px rgba(244, 220, 255, 0);
 }
-
+/*tool section end */
 /*    work section*/
 .work-card {
-    height: 200px;
-    width: 250px;
-    margin: auto;
+height: 200px;
+width: 250px;
+margin: auto;
 }
-
 .work-card > div:nth-child(1) {
-    height: 100%;
-    width: 100%;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 5px;
-    -webkit-box-shadow: 0px 20px 37px -15px rgba(94, 90, 94, 0.74);
-    -moz-box-shadow: 0px 20px 37px -15px rgba(94, 90, 94, 0.74);
-    box-shadow: 0px 20px 37px -15px rgba(94, 90, 94, 0.74);
-    transition: all 0.3s ease-in-out;
-    cursor: pointer;
-    position: absolute;
-    z-index: 10;
+height: 100%;
+width: 100%;
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+border-radius: 5px;
+-webkit-box-shadow: 0px 20px 37px -15px rgba(94, 90, 94, 0.74);
+-moz-box-shadow: 0px 20px 37px -15px rgba(94, 90, 94, 0.74);
+box-shadow: 0px 20px 37px -15px rgba(94, 90, 94, 0.74);
+transition: all 0.3s ease-in-out;
+cursor: pointer;
+position: absolute;
+z-index: 10;
 }
-
 .work-card-overlay {
-    background: rgba(168, 187, 255, 0.7);
-    height: 100%;
-    width: 100%;
-    top: 0;
-    color: white;
-    cursor: pointer;
+background: rgba(168, 187, 255, 0.7);
+height: 100%;
+width: 100%;
+top: 0;
+color: white;
+cursor: pointer;
 }
-
-
-
 .work-card > div:nth-child(1):hover {
-    box-shadow: 0px 20px 37px -20px rgba(168, 187, 255, 0.7);
-    z-index: -100;
-
+box-shadow: 0px 20px 37px -20px rgba(168, 187, 255, 0.7);
+z-index: -100;
 }
-
 .work-card > div:nth-child(2):hover {
-    box-shadow: 0px 20px 37px -20px rgba(94, 90, 94, 0.74);
-    z-index: 100;
-    transform: scale(20px);
+box-shadow: 0px 20px 37px -20px rgba(94, 90, 94, 0.74);
+z-index: 100;
+transform: scale(20px);
+}
+/*        another projects*/
+.img-fluid {
+border-radius: 20px;
+height: 200px;
+}
+/*        hoverEffect*/
+.project_card {
+display: flex;
+overflow: hidden;
+position: relative;
+text-align: center;
 
 }
+.project_card img {
+display: block;
+position: relative;
+transition: all .4s linear;
+}
 
+
+.project_card:hover img {
+-ms-transform: scale(1.2);
+-webkit-transform: scale(1.2);
+transform: scale(1.2);
+}
 /*forms style*/
 .forms {
-    /*
-    background: rgb(52, 113, 250);
-    background-image: linear-gradient(to right, #bec5d1, #bbc6dc, #b8c7e6, #b6c7f1, #b5c7fb);
+/*
+background: rgb(52, 113, 250);
+background-image: linear-gradient(to right, #bec5d1, #bbc6dc, #b8c7e6, #b6c7f1, #b5c7fb);
 */
-    min-height: 400px;
-    align-content: center;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0px 0px 6px 0px rgba(60, 53, 248, 0.6);
+min-height: 400px;
+align-content: center;
+padding: 20px;
+border-radius: 15px;
+box-shadow: 0px 0px 6px 0px rgba(60, 53, 248, 0.6);
 }
-
 .forms:hover {
-    cursor: pointer;
-    transform: translateY(10px);
-    /*    background-image:rgba(212, 100%, 50%, 1);*/
-    box-shadow: 0px 0px 6px 0px rgba(255, 163, 250, 1);
-    border-radius: 10px;
+cursor: pointer;
+/*    transform: translateY(10px);*/
+/*    background-image:rgba(212, 100%, 50%, 1);*/
+box-shadow: 0px 0px 6px 0px rgba(255, 163, 250, 1);
+border-radius: 10px;
 }
-
 .submit_btn {
-    /*    border: 2px solid rgba(60, 53, 248, 0.9);*/
-    background-color: blue;
-    border-radius: 15px;
-    height: 50px;
-    width: 100px;
-    border: none;
-    color: #fff;
-
-
+/*    border: 2px solid rgba(60, 53, 248, 0.9);*/
+background-color: blue;
+border-radius: 15px;
+height: 50px;
+width: 100px;
+border: none;
+color: #fff;
 }
-
 .submit_btn:hover {
-    background-color: rgba(130, 216, 118, 0.9);
-    color: #fff;
-    box-shadow: -1px 0px 1px 1px rgba(255, 163, 250, 0.5);
-
+/*    background-color: rgba(130, 216, 118, 0.9);*/
+color: #fff;
+/*    font-size: 1.2rem;*/
+box-shadow: -1px 0px 1px 1px rgba(255, 163, 250, 0.5);
+border: 1px solid #fff;
 }
-
 /*footer*/
 .footer {
-    color: black;
-    background-color: rgba(63, 62, 70, 1);
-    min-height: 100px;
-
+color: black;
+background-color: #020004;
+min-height: 100px;
+}
+.footnav li {
+display: inline-block;
+list-style: none;
+text-decoration: none;
+}
+.footnav a {
+color: antiquewhite;
+}
+/*media screen*/
+@media screen and (max-width: 320px) {
+.pop_text_down {
+height: 200px;
+width: 160px;
+}
+#navbarNav li a {
+border-radius:none;
+}
 }
