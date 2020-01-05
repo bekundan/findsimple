@@ -12,8 +12,14 @@ color: 0D0628;
 .secondary-color {
 color: #C14953;
 }
-.main-desc {
+.title-font{
+font-family: 'Scheherazade', serif;
+font-size: 2rem;
+}
+.subtitle-font{
+font-family: 'Inconsolata', monospace;
 font-size: 1.2rem;
+
 }
 .load-screen {
 min-height: 100vh;
@@ -40,12 +46,14 @@ color: white;
 font-size: 1rem;
 color: #213A60;
 font-weight: 800;
+float:right;
 }
 #navbarNav a:hover {
 color: #000;
 font-size: 1.1rem;
 border-bottom: 2px solid olive;
 border-radius: 200px;
+display: inline-block;
 }
 /*nav end*/
 /*my tool section css*/
@@ -192,15 +200,12 @@ transform: scale(1.2);
 }
 /*forms style*/
 .forms {
-/*
-background: rgb(52, 113, 250);
-background-image: linear-gradient(to right, #bec5d1, #bbc6dc, #b8c7e6, #b6c7f1, #b5c7fb);
-*/
 min-height: 400px;
 align-content: center;
 padding: 20px;
 border-radius: 15px;
 box-shadow: 0px 0px 6px 0px rgba(60, 53, 248, 0.6);
+font-family: 'Inconsolata', monospace;
 }
 .forms:hover {
 cursor: pointer;
@@ -229,23 +234,35 @@ border: 1px solid #fff;
 .footer {
 color: black;
 background-color: #020004;
-min-height: 100px;
+min-height: 50px;
+align-content: center;
+text-align: center;
 }
-.footnav li {
-display: inline-block;
-list-style: none;
+
+.footer a {
+color:;
+align-content: center;
+justify-content: center;
 text-decoration: none;
+
 }
-.footnav a {
-color: antiquewhite;
+.footer .col-2 a{
+color: #297045;
+
 }
+
 /*media screen*/
-@media screen and (max-width: 320px) {
-.pop_text_down {
+@media screen and (min-width: 992px) {
+/*.pop_text_down {
 height: 200px;
 width: 160px;
-}
-#navbarNav li a {
-border-radius:none;
-}
+}*/
+    #navbarNav li a {
+    border-radius:none;
+    }
+    .project-row{
+            
+            width: 75%;
+            margin:auto;
+        }
 }

@@ -11,15 +11,14 @@
         <!-- aniamtion links -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-        <!-- fonts links -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
-        <link href="https://fonts.googleapis.com/css?family=B612:400,700|Roboto:400,700,900&display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&display=swap" rel="stylesheet">
+        <!-- fonts links -->
+        <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700|Roboto:400,500,700,700i,900|Scheherazade:400,700&display=swap" rel="stylesheet">
         <title>My Portfolio</title>
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-            <a class=" logo" href="index.html">FinD SimpLe</a>
+            <a class=" logo" href="index.html" id="Home">FinD SimpLe</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon bg-light"></span>
             </button>
@@ -41,11 +40,11 @@
             </div>
         </nav>
         <!--    main image-->
-        <div class="row-fluid mt-5 mb-5 "></div>
+        <div class="row-fluid mt-5 mb-5 " ></div>
         <h3 class="text-center font-weight-bold primary-color title-font mt-5 ">Front End devloper and Designer</h3>
         <div class="text-center">
             <img id="intro-image" src="images/bg1.png" alt="Development Tools" class="img-fluid">
-            <p class="text-center mt-3 secondary-color main-desc body-font anim">I like to develop elegant responsive websites.</p>
+            <p class="text-center mt-3 secondary-color subtitle-font body-font anim">I like to develop elegant responsive websites.</p>
         </div>
         <!--    nav end-->
         <div class="row-fluid mt-5 mb-5 pb-5"></div>
@@ -98,7 +97,7 @@
         <section class="mt-5 mb-5 " id="works">
             <div class="container">
                 <h3 class="text-center font-weight-bold primary-color title-font mt-5 ">My recent projects</h3>
-                <p class="text-center mb-5 secondary-color">Here are few of my recent projects. Contact me to start working on your project.</p>
+                <p class="text-center mb-5 secondary-color  subtitle-font">Here are few of my recent projects. Contact me to start working on your project.</p>
                 <div class="row" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                     <div class="col-12 col-sm-6">
                         <div class="work-card position-relative">
@@ -129,9 +128,10 @@
         </section>
         <!--    another project-->
         <section>
-            <div class="container">
                 <h3 class="text-center font-weight-bold primary-color title-font mt-5 mb-5 pt-5">My design projects </h3>
-                <div class="row">
+                <p class="text-center mb-5 secondary-color  subtitle-font">Here are few of my recent projects,which are design on Photoshop and illustrator</p>
+                <div class="container">
+                <div class="row project-row">
                     <div class=" col-4">
                         <div class="project_card">
                             <img src="./images/./pojectpics/project1.jpg" class="img-fluid" alt="">
@@ -149,7 +149,7 @@
                     </div>
                 </div>
                 <br><br>
-                <div class="row">
+                <div class="row project-row">
                     <div class=" col-4">
                         <div class="project_card">
                             <img src="./images/./pojectpics/project4.jpg" class="img-fluid" alt="">
@@ -166,13 +166,13 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> <!--container-->
         </section>
         <!--    myworks end-->
         <div class="row-fluid mt-5 pb-5"></div>
         <!-- contact form -->
         <section class="mt-5 mb-5 contact  position-relative" id="Tell me">
-            <h2 class="text-center form_head primary-color mt-5">Want to discuss on a collaboration?</h2>
+            <h2 class="text-center form_head primary-color  title-font mt-5">Want to discuss on a collaboration?</h2>
             <div class="container">
                 <div class="row " data-aos="fade-up" data-aos-duration="3000">
                     <div class="col-md-3 col-1"></div>
@@ -203,19 +203,15 @@
         <!-- end the form section -->
         <!-- the footer -->
         <footer>
-            <div class="container-fluid footer mb-2">
-                <div class="row text-center">
-                    <div class="col-12">
-                        <div class="row text-center position-relative">
-                            <div class="col-4">
-                            </div>
-                            <div class="col-4">
-                                <a href="https://github.com/bekundan"><i class="ml-5 fab fa-github-square  fa-2x"></i></a>
-                                <a href="https://github.com/bekundan"><i class="ml-5 fab fa-instagram fa-2x "></i></a>
-                                <p class="text-white ml-5">copyright@kundan</p>
-                            </div>
-                            <div class="col-4"></div>
-                        </div>
+            <div class="container-fluid footer mb-1 position-relative">
+                <div class="row text-center d-flex">
+                    <div class="col-10">
+                        <a href="https://github.com/bekundan"><i class="ml-5 fab fa-github-square  fa-2x"></i></a>
+                        <a href="https://github.com/bekundan"><i class="ml-5 fab fa-instagram fa-2x "></i></a>
+                        <p class="text-white ml-5 mt-5">copyright@kundangupta</p>
+                    </div>
+                    <div class="col-2">
+                     <p class="text-white">Back to top<a href="#Home"><i class="ml-2 fas fa-chevron-up fa-3x"></i></a></p>   
                     </div>
                 </div>
             </div>
