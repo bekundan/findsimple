@@ -19,7 +19,6 @@ font-size: 2rem;
 .subtitle-font{
 font-family: 'Inconsolata', monospace;
 font-size: 1.2rem;
-
 }
 .load-screen {
 min-height: 100vh;
@@ -36,12 +35,10 @@ background-size: cover;
 border-radius: 50px;*/
 /*box-shadow: 2px -1px 2px #000;*/
 font-family: 'Gelasio', serif;
-
-
 }
 .logo:hover{
-    text-decoration: none;
-    color: #000;
+text-decoration: none;
+color: #000;
 }
 #intro-image{
 height: 400px;
@@ -51,7 +48,6 @@ width: 400px;
 margin-left: 50px;
 font-weight: bold;
 color: white;
-
 }
 #navbarNav li a {
 font-size: 1rem;
@@ -99,11 +95,11 @@ padding: 10px;
 }
 .pop_text {
 position: absolute;
-top: 100px;
+top: -40px;
 left: 0px;
 display: none;
 height: 150px;
-width: 200px;
+width: 150px;
 background-color: #fff;
 display: none;
 overflow: hidden;
@@ -112,15 +108,16 @@ z-index: 100;
 }
 .pop_text_down {
 position: absolute;
-top: 100px;
+top: 0px;
 left: 00px;
 display: none;
 height: 150px;
-width: 200px;
+width: 130px;
 background-color: #fff;
 display: none;
 overflow: hidden;
 font-size: 0.9;
+z-index: 10;
 }
 .tool-card:hover ~ .pop_text {
 display: block;
@@ -195,15 +192,12 @@ display: flex;
 overflow: hidden;
 position: relative;
 text-align: center;
-
 }
 .project_card img {
 display: block;
 position: relative;
 transition: all .4s linear;
 }
-
-
 .project_card:hover img {
 -ms-transform: scale(1.2);
 -webkit-transform: scale(1.2);
@@ -249,31 +243,26 @@ min-height: 50px;
 align-content: center;
 text-align: center;
 }
-
 .footer a {
 color:;
 align-content: center;
 justify-content: center;
 text-decoration: none;
-
 }
 .footer .col-2 a{
 color: #297045;
-
 }
-
 /*media screen*/
 @media screen and (min-width: 992px) {
 /*.pop_text_down {
 height: 200px;
 width: 160px;
 }*/
-    #navbarNav li a {
-    border-radius:none;
-    }
-    .project-row{
-            
-            width: 75%;
-            margin:auto;
-        }
+#navbarNav li a {
+border-radius:none;
+}
+.project-row{
+width: 75%;
+margin:auto;
+}
 }
