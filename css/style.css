@@ -3,7 +3,7 @@
 margin: 0;
 padding: 0;
 font-family: 'Roboto', sans-serif;
-/*    text-transform: capitalize;*/
+    /*text-transform: capitalize;*/
 box-sizing: border-box;
 }
 .primary-color {
@@ -22,8 +22,11 @@ font-size: 1.9rem;
 font-family: 'Inconsolata', monospace;
 font-size: 2rem;
 }
-.load-screen {
-min-height: 100vh;
+header{
+	background-image: radial-gradient( circle 879px at 10.4% 22.3%,  rgba(255,235,238,1) 0%, rgba(186,190,245,1) 93.6% );
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 100vh;
 }
 /*nav bar csss*/
 
@@ -57,8 +60,8 @@ font-weight: 800;
 
 /*nav end*/
 #intro-image{
-height: 300px;
-width: 300px;
+height: 350px;
+width: 400px;
 }
 /*my tool section css*/
 #mytools {
@@ -80,7 +83,8 @@ display: flex;
 margin: 45px 0px;
 -webkit-box-shadow: 0px 10px 13px -7px #000000, -9px -29px 42px -23px rgba(244, 220, 255, 0.2);
 box-shadow: -1px 10px 19px -22px #000000, 2px -55px 56px -23px rgba(230, 220, 255, 0);
-position: relative;
+/*position: relative;
+top: -40px;*/
 z-index: 10;
 }
 .tool-card:hover {
@@ -92,7 +96,7 @@ padding: 10px;
 }
 .pop_text {
     position: absolute;
-    top: 45px;
+    top: 0px;
     left: 0px;
     display: none;
     height: 100px;
@@ -105,7 +109,7 @@ padding: 10px;
 }
 .pop_text_down {
 position: absolute;
-top: 45px;
+top: 0px;
 left: 00px;
 display: none;
 height: 105px;
@@ -120,7 +124,7 @@ z-index: 10;
 display: block;
 cursor: pointer;
 box-shadow: -1px 10px 19px -22px #000000, 2px -55px 56px -23px rgba(230, 220, 255, 0);
-transition: .2s ease-in;
+transition:all .2s ease-in;
 }
 .tool-card:hover ~ .pop_text_down {
 display: block;
@@ -164,12 +168,13 @@ transition: all 0.3s ease-in-out;
 cursor: pointer;
 position: absolute;
 z-index: 10;
+ top: 60px;
 }
 .work-card-overlay {
 background: rgba(168, 187, 255, 0.7);
 height: 100%;
 width: 100%;
-top: 0;
+top: 60px;
 color: white;
 cursor: pointer;
 }
@@ -342,5 +347,5 @@ min-height: 40vh;
 width: 100%;
 color: #ffffff;
 border-radius: 20px;
-z-index: 0;
+
 }

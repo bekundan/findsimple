@@ -17,42 +17,43 @@
         <title>My Portfolio</title>
     </head>
     <body>
+        <header>
+           <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="logo" href="index.html" id="Home"><img src="./images/find.png" class="img-fluid" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon bg-light"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-lg-auto ">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#mytools">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#works">Projects </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d" href="#Tell me">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
         
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <a class="logo" href="index.html" id="Home"><img src="./images/find.png" class="img-fluid" alt=""></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon bg-light"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-lg-auto ">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#mytools">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#works">Projects </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link d" href="#Tell me">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-       
         <!--    main image-->
         <div class="row-fluid mt-5 mb-5 pt-3" ></div>
         <h3 class="text-center font-weight-bold primary-color title-font mt-5 ">Frontend developer and Designer</h3>
         <div class="text-center">
-            <img id="intro-image" src="images/bg1.png" alt="Development Tools" class="img-fluid">
+            <img id="intro-image" src="images/comp.png" alt="Development Tools" class="img-fluid">
             <p class="text-center mt-3 secondary-color subtitle-font body-font anim">I like to develop elegant responsive websites.</p>
         </div>
+</header>
         <!--    nav end-->
-        <div class="row-fluid mt-5 mb-5 pb-5 "></div>
+        <div class=" mt-5 mb-5 pb-5 "></div>
         <!--    my tool section-->
         <section>
-            <div class="container mt-5" id="mytools">
+            <div class="container mt-5 position-relative" id="mytools">
                 <div class="row hc">
                     <div class="col-12 col-md-8">
                         <div class="row" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1500">
@@ -87,8 +88,9 @@
                     </div>
                     <div class="col-md-4 col-12  disc">
                         <h5 class="">
-                        <h3>Hi, it's Kundan</h3> In my projects uses Html and  CSS and the Bootstrap &  we use JavaScript and Jquery for the some functionality and i could work on php and mysql.
-                        Also i have project on the Photoshop and the Illustrator where design some pre UI designs and some other like logo design .
+                        <h3>Hi, it's Kundan</h3> In my projects, depending upon the requirements I use HTML, CSS, Bootstrap and Javascript + jQuery to implement additional functionalities.
+                        I have also worked with PHP and mySQL in few interesting projects.
+                        I have also used Photoshop and Illustrator to design logos and extend UI designs.
                         </h5>
                     </div>
                 </div>
@@ -101,10 +103,12 @@
         <!--    myworks-->
         <section class="mt-5 mb-5 " id="works">
             <div class="container space1">
-                <h3 class="text-center font-weight-bold primary-color title-font mt-5 ">My recent projects</h3>
-                <p class="text-center mb-5   subtitle-font">Here are few of my recent projects. Contact me to start working on your project.</p>
+                <h3 class="text-center font-weight-bold primary-color title-font  ">My recent projects</h3>
+                <p class="text-center subtitle-font">Here are few of my recent projects. Contact me to start working on your 
+                project.</p>
+          
                 <div class="row" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
-                    <div class="col-12 col-sm-6">
+                                    <div class="col-12 col-sm-6">
                         <div class="work-card position-relative">
                             <div style="background-image: url('images/Capture1.PNG')">
                             </div>
@@ -214,20 +218,19 @@
                     
                     <div class="col-12 text-center">
                         <div><a href=""><i class="fab fa-github" ></i></a>
-                            <a href=""><i class="fab fa-instagram " ></i></a></div>
+                        <a href=""><i class="fab fa-instagram " ></i></a></div>
                         <p>copyright@kundan.</p>
-
                     </div>
                 </div>
-                </footer>
-                <!-- Optional JavaScript -->
-                <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-                <script>
-                AOS.init();
-                </script>
-                <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-                <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-            </body>
-        </html>
+            </footer>
+            <!-- Optional JavaScript -->
+            <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+            <script>
+            AOS.init();
+            </script>
+            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        </body>
+    </html>
