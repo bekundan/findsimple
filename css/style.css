@@ -231,44 +231,58 @@ display: flex;
 overflow: hidden;
 position: relative;
 text-align: center;
+min-height: 200px!important;
+/*min-width: 250px!important;*/
+}
+.project_card img:focus ~.project_card_overlay {
+	min-height: 200px!important;
+min-width: 250px!important;
+opacity: 1;
 }
 .project_card img {
 display: block;
 position: relative;
 transition: all .4s linear;
+overflow: hidden;
 }
 /*.project_card:hover img {
 -ms-transform: scale(1.2);
 -webkit-transform: scale(1.2);
 transform: scale(1.2);
+
 }*/
 
-.project_card:hover ~.project_card_overlay {
+.project_card:hover ~ .project_card_overlay {
 display: block;
 opacity: 1;
 box-sizing: border-box;
-transition: all 2s ease-in-out;
-display: flex;
+
+/*display: flex;*/
+z-index: 999;
 }
 .project_card_overlay {
     background: rgba(168, 187, 255, 0.7);
-    height: 200px;
-    width: 200px;
+    height:200px;
+    width:200px;
     position: absolute;
     top: 0px;
     left: 15px;
     color: #0D0628;
     cursor: pointer;
-    border-radius: 21px;
+    /*border-radius: 21px;*/
     display: none;
-    background-size: cover;
+    /*background-size: cover;*/
 	box-sizing: border-box;
+	overflow: hidden;
+
+	transition: all 0.3s ease-in-out;
 
 }
 .overlay-item{
 	margin: 50px;
 	align-content: center;
 	text-align: center;
+	
 }
 /*forms style*/
 
@@ -308,14 +322,16 @@ background-size: cover;
 }
 .form-control{
 	 background-color:rgb(193,193,193,0.5)!important;
-	width:100%!important;
-	margin-left: auto;
+	width:75%!important;
+	margin-left: 20%!important;
+
 	/*color: #fff;*/
 	border-radius: 15px !important;
 
 }
 ::placeholder{
 	color:  #0D0628!important;
+	font-weight: 500;
 }
 .form-group {
     margin-bottom: 1rem;
@@ -384,11 +400,11 @@ background-color: #7510F7;
 }
 .footer a i:hover{
 border-radius: 5px;
-/*border:1px solid white;*/
-/*background-color: #000;*/
+
 }
 
-/*media screen*/
+		/*media screen*/
+
 @media screen and (min-width: 990x) {
 .logo{
 /*height: 20px;
@@ -416,16 +432,14 @@ margin:auto;
 .intro-text{
 	min-width: 200px;
 }
+
 }
 @media screen and (min-width: 770x){
 	.form_head{
 	min-width: 80vw;
 	min-height: 10vh;
 }
-.form-control {
-    width: 75%!important;
-    margin-left: 10px;
-}
+
 }
 /*extra style*/
 .space1{
@@ -437,4 +451,17 @@ width: 100%;
 color: #ffffff;
 border-radius: 20px;
 
+}
+
+.modalitem{
+	min-height: 300px;
+	width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	align-content: center;
+}
+.modalitem img{
+	min-height: 300px;
+	width: 300px;
+	margin: 10px 10px;
 }
