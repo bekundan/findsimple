@@ -298,7 +298,7 @@ border-radius: 30px;
 /*border:1px solid #000;*/
 box-shadow: 1px 2px 1px #000;
 position: absolute;
-top: -15%;
+top: -16%;
 left: 50%;
 transform: translate(-50%,-50%);
 font-size: 1.2rem !important;
@@ -367,8 +367,9 @@ width: 100px;
 border: none;
 color: #fff;
 font-size: 1.2rem;
-align-content: center;
-justify-content: center;
+align-content: left;
+margin: auto;
+/*justify-content: center;*/
 }
 .submit_btn a{
 	text-decoration: none;
