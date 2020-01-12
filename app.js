@@ -1,7 +1,6 @@
 $(document).ready(function(){
 		
-		$(".arrow_icon").animate({color:'red'
-	});
+	
 		$(".intro-img").fadeIn(5000);
 
 		$("nav a").click(function(e){
