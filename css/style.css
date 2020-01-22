@@ -1,5 +1,4 @@
-@import url("/_global.css");
-* {
+    * {
 margin: 0;
 padding: 0;
 font-family: 'Roboto', sans-serif;
@@ -228,11 +227,11 @@ text-align: center;
 min-height: 200px!important;
 /*min-width: 250px!important;*/
 }
-.project_card img:focus ~.project_card_overlay {
+/*.project_card img:focus ~.project_card_overlay {
 min-height: 200px!important;
 min-width: 250px!important;
 opacity: 1;
-}
+}*/
 .project_card img {
 display: block;
 position: relative;
@@ -248,7 +247,7 @@ transform: scale(1.2);
 display: block;
 opacity: 1;
 box-sizing: border-box;
-z-index: 999;
+
 }
 .project_card_overlay:hover{
 z-index: 999;
@@ -413,7 +412,7 @@ min-height: 10vh;
 min-width: 200px;
 }
 }
-@media screen and (min-width: 770x){
+@media screen and (min-width: 770px){
 .form_head{
 min-width: 80vw;
 min-height: 10vh;
