@@ -12,6 +12,18 @@ $(document).ready(function(){
 //            
 //           alert("demo"); 
 //        });
+		// $(".project_card img").hover(function(){
+		// 	$(".card_overlay").css({
+		// 		display:"block",
+		// 		cursur:"pointer"
+		// 	});
+		// 		$(".card_overlay").mouseleave(function(){
+		// 			$(this).css({
+		// 		display:"none"
+		// 	});
+		// 		})
+		// 	});
+
        
 		$("nav a,.arrow_icon a").click(function(e){
 			e.preventDefault();
