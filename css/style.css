@@ -220,26 +220,31 @@ transform: scale(20px);
 	max-width: 200px;
 	overflow: hidden;
   transition: .5s ease;
+  position: relative;
+  
 }
 .project_card:hover~.card_overlay {
 	cursor: pointer;
 	display: block;
 	z-index: 99;
 	box-sizing: border-box;
-	pointer-events: none;
+	pointer-events: auto;
+	padding: none;
+
 	
 }
-
 .card_overlay {
     height: 200px;
-    width: 200px;
-    background-color: green;
+    min-width: 202px;
+    background-color: #00658085;
+     display: none; 
+    cursor: pointer;
     position: absolute;
-    top: 5%;
-    left: 4%;
-    display: none;
-    cursor: pointer;	
+    top: 10px;
+    left: 14px;
+    
 }
+
 .overlay_item {
     color: #fff;
     justify-content: space-around;
@@ -249,6 +254,7 @@ transform: scale(20px);
     text-align: center;
     text-decoration: none;
     cursor: pointer;
+    /*pointer-events: all;*/
 }
 
 .btn-demo{
